@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorInnerStickDefault">#fa7946</color>
+    <color name="colorOuterStickDefault">#ff9065</color>
+    <color name="colorOuterEdgeDefault">#f4ad6a</color>
+    <color name="colorInnerEdgeDefault">#edc294</color>
+    <color name="colorDotDefault">#f5e9dd</color>
+    
+    
+    <color name="colorRectangle">#f4ad6a</color>
+    <color name="colorInnerRectangle">#edc294</color>
+    <color name="colorSwitch">#fa7946</color>
+    <color name="colorWhite">#ffffff</color>
+
+</resources>

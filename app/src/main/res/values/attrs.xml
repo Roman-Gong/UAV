@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StickControlView">
+
+        <attr name="edge_outer_radius" />
+        <attr name="stick_inner_radius" format="dimension"/>
+        <attr name="stick_inner_color" format="color"/>
+        <attr name="edge_outer_color" format="color"/>
+        <attr name="edge_inner_color" format="color"/>
+        <attr name="dot_color" format="color"/>
+        <attr name="stick_outer_radius" format="dimension"/>
+        <attr name="stick_outer_color" format="color"/>
+        <attr name="edge_inner_radius" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ControlView">
+        <attr name="edge_radius" format="dimension"/>
+    </declare-styleable>
+
+
+
+</resources>
