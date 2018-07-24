@@ -5,16 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
-      <com.example.yuanyuanlai.uav.StickControlView
+      <com.example.yuanyuanlai.uav.CustomView.StickControlView
           android:layout_alignParentBottom="true"
           android:layout_marginStart="30dp"
           android:layout_marginBottom="45dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
 
-      <com.example.yuanyuanlai.uav.HeightControlView
+      <com.example.yuanyuanlai.uav.CustomView.HeightControlView
           android:layout_alignParentBottom="true"
           android:layout_alignParentEnd="true"
           android:layout_marginBottom="20dp"

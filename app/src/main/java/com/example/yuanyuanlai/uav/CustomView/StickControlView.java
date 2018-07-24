@@ -1,4 +1,4 @@
-package com.example.yuanyuanlai.uav;
+package com.example.yuanyuanlai.uav.CustomView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,6 +12,9 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
+
+import com.example.yuanyuanlai.uav.CustomView.ControlView;
+import com.example.yuanyuanlai.uav.R;
 
 public class StickControlView extends ControlView {
 

@@ -19,6 +19,8 @@
         <attr name="edge_radius" format="dimension"/>
     </declare-styleable>
 
-
+    <declare-styleable name="RotateScanView">
+        <attr name="outer_radius_size" format="dimension"/>
+    </declare-styleable>
 
 </resources>

@@ -4,12 +4,34 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="colorLightBlue">#8ccef4</color>
+    <color name="colorLightGray">#e8e8e8</color>
+    <color name="colorGray">#c2c2c2</color>
+    <color name="colorDarkGray">#6e6e6e</color>
+    <color name="colorBlue">#2791f4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPurple">#964ed4</color>
+    <color name="colorRed">#fa1111</color>
+    <color name="colorPink">#e45652</color>
+    <color name="colorOrange">#f57c20</color>
+    <color name="colorLightGreen">#a1da91</color>
+    <color name="colorGreen">#44b924</color>
+    <color name="colorLightBlack">#222222</color>
+    <color name="transparent">#00ffffff</color> //透明
+    <color name="toast_bg_loading">#50000000</color>  //半透明
 
     <color name="colorInnerStickDefault">#fa7946</color>
     <color name="colorOuterStickDefault">#ff9065</color>
     <color name="colorOuterEdgeDefault">#f4ad6a</color>
     <color name="colorInnerEdgeDefault">#edc294</color>
     <color name="colorDotDefault">#f5e9dd</color>
+
+    <!--自定义View-->
+    <color name="lightBlue">#8eb9f5</color>
+    <color name="blue1">#aa95e7f8</color>
+    <color name="blue2">#6bfff9</color>
+    <color name="waveBelowBlue">#3256cbf9</color>
+    <color name="waveAboveBlue">#3c83d2f4</color>
     
     
     <color name="colorRectangle">#f4ad6a</color>

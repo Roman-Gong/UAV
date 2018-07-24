@@ -1,4 +1,4 @@
-package com.example.yuanyuanlai.uav;
+package com.example.yuanyuanlai.uav.CustomView;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -12,6 +12,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.yuanyuanlai.uav.R;
 
 public class HeightControlView extends View {
 
@@ -155,7 +157,7 @@ public class HeightControlView extends View {
 
         paint.reset();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(getResources().getColor(R.color.colorRectangle));
+        paint.setColor(getResources().getColor( R.color.colorRectangle));
         paint.setStrokeWidth(5.0f);
         paint.setAntiAlias(true);
         canvas.drawRoundRect(35, 10, width-35, height-10, (width-70)/2, (width-70)/2, paint);
