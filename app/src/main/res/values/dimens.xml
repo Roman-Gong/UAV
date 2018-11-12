@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--PADDING & MARGIN-->
+    <dimen name="s_huge_spacing">42dp</dimen>
     <dimen name="huge_spacing">32dp</dimen>
     <dimen name="big_spacing">24dp</dimen>
     <dimen name="sub_big_spacing">20dp</dimen>
@@ -19,6 +20,7 @@
     <dimen name="sub_medium_text">14sp</dimen>
     <dimen name="small_text">12sp</dimen>
     <dimen name="sub_small_text">10sp</dimen>
+    <dimen name="mini_text">9sp</dimen>
 
     <!--VIEWS-->
     <dimen name="scroll_bar_size">4dp</dimen>

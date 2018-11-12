@@ -26,17 +26,27 @@
     <color name="colorInnerEdgeDefault">#edc294</color>
     <color name="colorDotDefault">#f5e9dd</color>
 
+    <!--shape_water_quality-->
+    <color name="shape_blue_start">#6ca3f4</color>
+    <color name="shape_blue_end">#4e79f1</color>
+
     <!--自定义View-->
     <color name="lightBlue">#8eb9f5</color>
     <color name="blue1">#aa95e7f8</color>
     <color name="blue2">#6bfff9</color>
     <color name="waveBelowBlue">#3256cbf9</color>
     <color name="waveAboveBlue">#3c83d2f4</color>
-    
+
+    <!--shape_button_login_gradient-->
+    <color name="shape_button_blue_start">#63a4ec</color>
+    <color name="shape_button_blue_end">#4571e7</color>
     
     <color name="colorRectangle">#f4ad6a</color>
     <color name="colorInnerRectangle">#edc294</color>
     <color name="colorSwitch">#fa7946</color>
     <color name="colorWhite">#ffffff</color>
+
+    <color name="color_line">#96d1d1d1</color>
+    <color name="white_gray">#f2f2f2</color>
 
 </resources>

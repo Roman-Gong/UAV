@@ -49,12 +49,12 @@ public class RotateScanView extends View{
     public static final String GREAT = "优";
     public static final String FINE = "良";
     public static final String BAD = "差";
-    public static final String CAN_DRINK = "可饮用";
-    public static final String CAN_NOT_DRINK = "不可饮";
+    public static final String NO = "无";
 
     // 当前水质级别
-    private String currentQuality = FINE;
-    private String currentQuality2 = CAN_DRINK;
+    private String currentQuality = NO;
+    // 温度
+    private String temperature = "0.0℃";
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -65,14 +65,10 @@ public class RotateScanView extends View{
         drawRotateScan();
     }
 
-    // 通过此方法更新级别
-    public void setWaterQuality(String quality) {
+    // 通过此方法更新级别和温度
+    public void setWaterQuality(String quality, String temp) {
         currentQuality = quality;
-        if (GREAT.equals(quality) || FINE.equals(quality)){
-            currentQuality2 = CAN_DRINK;
-        }else {
-            currentQuality2 = CAN_NOT_DRINK;
-        }
+        temperature = temp + "℃";
         invalidate();
     }
 
@@ -104,7 +100,7 @@ public class RotateScanView extends View{
         mPaint.setColor(getResources().getColor(R.color.blue2));
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setTextAlign( Paint.Align.CENTER);
-        mCanvas.drawText(currentQuality2, 0, 0, mPaint);
+        mCanvas.drawText(temperature, 0, 0, mPaint);
         mCanvas.restore();
     }
 
@@ -151,7 +147,7 @@ public class RotateScanView extends View{
     private void initAnimator() {
         valueAnimator = ValueAnimator.ofFloat(0F, 1F);
         valueAnimator.setInterpolator(new LinearInterpolator());
-        valueAnimator.setDuration(4 * 1000);
+        valueAnimator.setDuration(5 * 950);
         valueAnimator.addUpdateListener( new ValueAnimator.AnimatorUpdateListener( ) {
             @Override
             public void onAnimationUpdate(ValueAnimator value) {
@@ -171,6 +167,16 @@ public class RotateScanView extends View{
         }
         if (valueAnimator.isPaused()){
             valueAnimator.start();
+        }
+    }
+
+    public void pauseAnimation() {
+        if (!valueAnimator.isPaused()){
+            valueAnimator.pause();
+            return;
+        }
+        if (valueAnimator.isStarted()){
+            valueAnimator.pause();
         }
     }
 

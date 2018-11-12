@@ -12,14 +12,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="52dp">
 
         <ImageButton
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/fab_margin"
-            android:background="@drawable/ic_white_add"/>
+            android:background="@drawable/ic_white_back"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,25 +39,252 @@
             android:layout_marginRight="@dimen/fab_margin"/>
     </RelativeLayout>
 
-    <FrameLayout
-        android:layout_width="200dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_gravity="center">
+        android:layout_marginBottom="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/sub_medium_spacing">
 
-        <com.example.yuanyuanlai.uav.CustomView.RotateScanView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:id="@+id/rotate_scan_view"
-            android:layout_gravity="center"
-            app:outer_radius_size="191dp"/>
+        <FrameLayout
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true">
 
-        <com.example.yuanyuanlai.uav.CustomView.WaveView
-            android:id="@+id/wave_view"
-            android:layout_margin="13dp"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:layout_gravity="bottom"/>
+            <com.example.yuanyuanlai.uav.CustomView.RotateScanView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:id="@+id/rotate_scan_view"
+                android:layout_gravity="center"
+                app:outer_radius_size="184dp"/>
 
-    </FrameLayout>
+            <com.example.yuanyuanlai.uav.CustomView.WaveView
+                android:id="@+id/wave_view"
+                android:layout_margin="10dp"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/big_spacing"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_water_report"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报告"
+                android:textSize="13sp"
+                android:textColor="@color/white_gray"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_oxygen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/corner"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:layout_weight="1"
+        android:background="@drawable/shape_round_rect">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:paddingLeft="@dimen/big_spacing"
+                android:paddingRight="@dimen/big_spacing"
+                android:text="溶氧"
+                android:textSize="@dimen/sub_big_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="(mg/l)"
+                android:textSize="@dimen/mini_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_water_quality_oxygen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/sub_medium_spacing"
+            android:text="@string/no_data"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#a49aafda"/>
+
+        <TextView
+            android:id="@+id/tv_quality_oxygen_standard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/sub_small_spacing"
+            android:textSize="12sp"
+            android:text="点我查看\nO2标准"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_ph"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_round_rect"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/s_small_spacing"
+        android:layout_marginBottom="@dimen/small_spacing">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:paddingLeft="@dimen/big_spacing"
+                android:paddingRight="@dimen/big_spacing"
+                android:text="酸碱"
+                android:textSize="@dimen/sub_big_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(ph)"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/mini_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:paddingRight="@dimen/sub_medium_spacing"
+            android:layout_weight="1"
+            android:text="@string/no_data"
+            android:id="@+id/tv_water_quality_ph"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#a49aafda"/>
+
+        <TextView
+            android:id="@+id/tv_quality_ph_standard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:paddingLeft="@dimen/sub_small_spacing"
+            android:text="点我查看\nPH标准"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_nitrogen"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:background="@drawable/shape_round_rect"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/s_small_spacing"
+        android:layout_marginBottom="@dimen/fab_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/big_spacing"
+                android:paddingRight="@dimen/big_spacing"
+                android:text="氨氮"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sub_big_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(mg/l)"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/mini_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:paddingRight="@dimen/sub_medium_spacing"
+            android:text="@string/no_data"
+            android:layout_weight="1"
+            android:id="@+id/tv_water_quality_nitrogen"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#a49aafda"/>
+
+        <TextView
+            android:id="@+id/tv_quality_nitrogen_standard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="@dimen/sub_small_spacing"
+            android:text="点我查看\nNH标准"/>
+
+    </LinearLayout>
 
 </LinearLayout>

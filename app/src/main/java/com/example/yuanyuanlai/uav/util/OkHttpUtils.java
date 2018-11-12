@@ -1,7 +1,10 @@
 package com.example.yuanyuanlai.uav.util;
 
+import com.example.yuanyuanlai.uav.Bean.UserId;
+import com.google.gson.Gson;
+
 import okhttp3.Callback;
-import okhttp3.FormBody;
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -13,21 +16,26 @@ import okhttp3.RequestBody;
  * @github https://github.com/GongYunHaoyyy
  * @blog https://www.jianshu.com/u/52a8fa1f29fb
  */
-public class OkHttpUtil {
+public class OkHttpUtils {
 
-    private String baseUrl = "";
+    private String baseUrl = "http://api.tlink.io/tlink_interface/api";
+    private String APIKey = "a87410496236400c85215c2848e2aafe";
+    private String userId = "200003948";
 
-    private OkHttpUtil() {
+    public static final MediaType JSON=MediaType.parse("application/json; charset=utf-8");
+
+
+    private OkHttpUtils() {
         okHttpClient = new OkHttpClient();
     }
-    private static volatile OkHttpUtil okHttpUtil;
+    private static volatile OkHttpUtils okHttpUtil;
     private OkHttpClient okHttpClient;
 
-    public static OkHttpUtil getInstance() {
+    public static OkHttpUtils getInstance() {
         if (okHttpUtil == null){
-            synchronized (OkHttpUtil.class) {
+            synchronized (OkHttpUtils.class) {
                 if (okHttpUtil == null){
-                    okHttpUtil = new OkHttpUtil();
+                    okHttpUtil = new OkHttpUtils();
                 }
             }
         }
@@ -43,9 +51,12 @@ public class OkHttpUtil {
     }
 
     public void post(String detailUrl, Callback callback){
-        RequestBody requestBody = new FormBody.Builder()
-//                .add("userId", id)
-                .build();
+        UserId id = new UserId();
+        id.setUserId(userId);
+        Gson gson = new Gson();
+        String json = gson.toJson(id);
+        RequestBody requestBody = RequestBody.create(JSON, json);
+
         Request request = new Request.Builder()
                 .url(baseUrl + detailUrl)
                 .post(requestBody)
