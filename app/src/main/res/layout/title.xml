@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ib_title_back"
+        android:layout_marginStart="@dimen/medium_spacing"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+    <TextView
+        android:id="@+id/tv_title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ib_title_back"
+        android:layout_marginStart="@dimen/sub_medium_spacing"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/sign_in"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"/>
+
+</RelativeLayout>

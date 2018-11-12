@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/medium_spacing"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_login_people"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_login_user_name"
+            android:hint="@string/user_name"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:padding="@dimen/sub_medium_spacing"
+            android:background="@android:color/transparent"
+            android:textSize="15sp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:background="@color/color_line"
+        android:layout_height="@dimen/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginTop="@dimen/sub_small_spacing"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_login_lock"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/sub_medium_spacing"
+            android:textSize="15sp"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:background="@color/color_line"
+        android:layout_marginBottom="@dimen/medium_spacing"
+        android:layout_height="@dimen/line"/>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:background="@drawable/shape_button_login_blue"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:padding="@dimen/sub_medium_spacing"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/shape_blue_end"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shape_blue_end"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            android:text="@string/sign_in_1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/shape_blue_end"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
