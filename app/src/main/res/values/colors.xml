@@ -26,6 +26,9 @@
     <color name="colorInnerEdgeDefault">#edc294</color>
     <color name="colorDotDefault">#f5e9dd</color>
 
+    <color name="colorTextNormal">#ccc9c8c8</color>
+    <color name="colorTextSelected">#cc2bc1c1</color>
+    
     <!--shape_water_quality-->
     <color name="shape_blue_start">#6ca3f4</color>
     <color name="shape_blue_end">#4e79f1</color>
@@ -40,11 +43,45 @@
     <!--shape_button_login_gradient-->
     <color name="shape_button_blue_start">#63a4ec</color>
     <color name="shape_button_blue_end">#4571e7</color>
-    
+
     <color name="colorRectangle">#f4ad6a</color>
     <color name="colorInnerRectangle">#edc294</color>
     <color name="colorSwitch">#fa7946</color>
-    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite">#e0ffffff</color>
+
+    <color name="colorAlphaWhite">#3effffff</color>
+    <color name="colorVerticalWhite">#68ffffff</color>
+    <color name="colorHorizontalWhite">#75ffffff</color>
+
+    <color name="colorBar">#beffffff</color>
+    
+    <color name="colorStart">#ef1fd6d2</color>
+    <color name="colorCenter">#eb7dd6d3</color>
+    <color name="colorEnd">#d7b0dfde</color>
+
+    <color name="colorStart_1">#ed5decae</color>
+    <color name="colorCenter_1">#e577cfa9</color>
+    <color name="colorEnd_1">#e58cc4ab</color>
+
+    <color name="colorStart_2">#f26ee269</color>
+    <color name="colorCenter_2">#e784ca81</color>
+    <color name="colorEnd_2">#e79ed49c</color>
+
+    <color name="colorStart_3">#efd7fa5a</color>
+    <color name="colorCenter_3">#e5d5ef78</color>
+    <color name="colorEnd_3">#e5e0edaf</color>
+
+    <color name="colorStart_4">#f3faea5a</color>
+    <color name="colorCenter_4">#e5f2e780</color>
+    <color name="colorEnd_4">#e5cfc992</color>
+
+    <color name="colorStart_5">#f0ffac4f</color>
+    <color name="colorCenter_5">#e5f9bf7d</color>
+    <color name="colorEnd_5">#e5e2bf98</color>
+
+    <color name="colorStart_6">#f3fa675a</color>
+    <color name="colorCenter_6">#dbfa958c</color>
+    <color name="colorEnd_6">#dcffd5d2</color>
 
     <color name="color_line">#96d1d1d1</color>
     <color name="white_gray">#f2f2f2</color>

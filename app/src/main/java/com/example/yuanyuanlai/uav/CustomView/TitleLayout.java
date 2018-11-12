@@ -19,6 +19,7 @@ import com.example.yuanyuanlai.uav.R;
  * @blog https://www.jianshu.com/u/52a8fa1f29fb
  */
 public class TitleLayout extends RelativeLayout {
+
     private ImageButton buttonBack;
     private TextView textTitle;
     private String title;

@@ -19,6 +19,7 @@ import com.example.yuanyuanlai.uav.R;
  * @blog https://www.jianshu.com/u/52a8fa1f29fb
  */
 public class WaveView extends View{
+
     private float CC = (float) 0.552284749831;
     private Path mAbovePath,mBelowWavePath;
     private Paint mAboveWavePaint,mBelowWavePaint;
