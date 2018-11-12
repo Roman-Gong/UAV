@@ -1,4 +1,4 @@
-package com.example.yuanyuanlai.uav;
+package com.example.yuanyuanlai.uav.CustomView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.yuanyuanlai.uav.R;
 
 public abstract class ControlView extends View {
 

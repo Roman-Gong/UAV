@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity"
+    android:orientation="vertical">
+
+    <com.example.yuanyuanlai.uav.CustomView.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+        <FrameLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:paddingStart="25dp"
+                android:hint="输入邮箱"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:text="发送验证码"
+                android:layout_gravity="end"
+                android:layout_width="80dp"
+                android:layout_height="50dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/verification_code"
+                android:paddingStart="10dp"
+                android:hint="发送验证码"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/countDown"
+                android:text="时间"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="end"
+                android:layout_width="80dp"
+                android:layout_height="50dp" />
+
+        </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_sign_in_password"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:background="@drawable/shape_button_login_blue"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/s_huge_spacing"
+        android:layout_marginEnd="@dimen/s_huge_spacing"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+</LinearLayout>
